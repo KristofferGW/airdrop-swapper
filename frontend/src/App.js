@@ -1,9 +1,13 @@
 import './App.css';
 import Header from './components/Header';
+import SwapForm from './components/SwapForm';
 
 function App() {
   return (
-    <Header />
+    <div>
+      <Header />
+      <SwapForm />
+    </div>
   );
 }
 
