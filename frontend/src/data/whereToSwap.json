@@ -1,0 +1,85 @@
+[
+    {"name": "SyncSwap", "chains": 
+        [
+            "zkSync Era", "Linea", "Scroll"
+        ],
+    "airdropLikelihood": "High", "rating": 2, "url": "https://syncswap.xyz/swap"},
+
+    {"name": "Odos", "chains":
+        [
+            "Ethereum", "Optimism", "BNB Chain", "Polygon", "Fantom", "zkSync Era", "Base", "Arbitrum One", "Avalanche"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://app.odos.xyz"},
+
+    {"name": "Slingshot", "chains":
+        [
+            "Arbitrum Nova", "Arbitrum One", "BNB Chain", "Base", "Canto", "Ethereum", "Optimism", "Osmosis", "Polygon"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://app.slingshot.finance"},
+
+    {"name": "MetaMask", "chains":
+        [
+            "Ethereum", "BNB Chain", "Avalanche", "Polygon", "Optimism", "Arbitrum One", "zkSync Era", "Linea"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://metamask.io/swaps"},
+    {"name": "Rainbow", "chains":
+        [
+            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "Base", "Zora", "BNB Chain"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://rainbow.me"},
+    {"name": "Ambient", "chains":
+        [
+            "Ethereum", "Scroll"
+        ],
+    "airdropLikelihood": "Medium", "rating": 4, "url": "https://ambient.finance"},
+    {"name": "Rabby", "chains":
+        [
+            "Ethereum", "BNB Chain", "Arbitrum One", "Aurora", "Avalanche", "Base", "BTTC", "Celo", "Cronos", "Fantom", "Gnosis", "Klaytn", "Linea", "Optimism", "Polygon"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://rabby.io"},
+    {"name": "JediSwap", "chains":
+        [
+            "Starknet"
+        ],
+    "airdropLikelihood": "Medium", "rating": 2, "url": "https://app.jediswap.xyz/#/swap"},
+    {"name": "Braavos", "chains":
+        [
+            "Starknet"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://braavos.app"},
+    {"name": "Argent", "chains":
+        [
+            "Starknet"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://www.argent.xyz/argent-x"},
+    {"name": "AVNU", "chains":
+        [
+            "Starknet"
+        ],
+    "airdropLikelihood": "High", "rating": 4, "url": "https://app.avnu.fi/en"},
+    {"name": "mySwap", "chains":
+        [
+            "Starknet"
+        ],
+    "airdropLikelihood": "Medium", "rating": 2, "url": "https://www.myswap.xyz"},
+    {"name": "Phantom", "chains":
+        [
+            "Solana"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://phantom.app"},
+    {"name": "Jupiter", "chains":
+        [
+            "Solana"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://jup.ag"},
+    {"name": "Bungee Exchange", "chains":
+        [
+            "Ethereum", "Optimism", "Arbitrum One", "Polygon", "Base", "zkSync Era", "Polygon zkEVM", "Linea", "BNB Chain", "Avalanche", "Gnosis", "Fantom", "Aurora"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://www.bungee.exchange"},
+    {"name": "Jumper", "chains":
+        [
+            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora"
+        ],
+    "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"}
+]
