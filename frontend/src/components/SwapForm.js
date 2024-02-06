@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import StyledH2 from "../styling-components/StyledH2";
-import chains from "../data/chains.json";
+import whereToSwap from "../data/whereToSwap.json";
 
 function SwapForm() {
+    const [selectedChain, setSelectedChain] = useState("");
+
+    const uniqueChains = Array.from(
+        new Set(whereToSwap.flatMap((entry) => entry.chains))
+    );
+
+    const handleChangeChain = (event) => {
+        setSelectedChain(event.target.value);
+    };
+
     return (
         <StyledFormContainer>
                 <StyledH2 size="1.3rem">Where to swap for a potential airdrop</StyledH2>
                 <StyledLabel htmlFor="chain">Chain:</StyledLabel>
-                <SelectField id="chain">
-                    {chains.map((option) => (
-                        <option key={option.value} value={option.value}>
-                            {option.value}
+                <SelectField id="chain" onChange={handleChangeChain} value={selectedChain}>
+                    <option value="">Select a Chain</option>
+                    {uniqueChains.map((chain) => (
+                        <option key={chain} value={chain}>
+                            {chain}
                         </option>
                     ))}
                 </SelectField>
