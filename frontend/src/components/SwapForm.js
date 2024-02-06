@@ -47,10 +47,10 @@ const SelectField = styled.select`
     color: #ffffff;
 `;
 
-const InputField = styled.input`
-    margin: 10px 0;
-    padding: 8px;
-`;
+// const InputField = styled.input`
+//     margin: 10px 0;
+//     padding: 8px;
+// `;
 
 const StyledButton = styled.button`
     background-color: #7999c5;
