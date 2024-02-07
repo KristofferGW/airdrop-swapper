@@ -1,12 +1,20 @@
 import './App.css';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import SwapForm from './components/SwapForm';
+import SwapReults from './components/SwapResults';
+import StyledContainer from './styling-components/StyledContainer';
 
 function App() {
+  const [selectedChain, setSelectedChain] = useState("");
+
   return (
     <div>
       <Header />
-      <SwapForm />
+      <StyledContainer>
+        <SwapForm setSelectedChain={setSelectedChain} />
+        {selectedChain && <SwapReults selectedChain={selectedChain} />}
+      </StyledContainer>
     </div>
   );
 }

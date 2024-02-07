@@ -7,3 +7,8 @@ a {
   color: #f7d3f7;
   cursor: pointer;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
