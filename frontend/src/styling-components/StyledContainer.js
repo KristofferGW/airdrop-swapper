@@ -10,6 +10,7 @@ export default StyledContainer;
 const StyledDiv = styled.div`
     background-color: #120F29;
     padding: 20px;
+    margin-top: 100px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
