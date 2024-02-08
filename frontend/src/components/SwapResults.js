@@ -7,11 +7,13 @@ const SwapReults = ({ selectedChain }) => {
       entry.chains.includes(selectedChain)  
     );
 
+    const randomizedPlaces = filteredPlaces.sort(() => Math.random() - 0.5);
+
     return (
         <div>
             <StyledH2>Places to Swap on {selectedChain}</StyledH2>
                 <ul>
-                    {filteredPlaces.map((place) =>(
+                    {randomizedPlaces.map((place) =>(
                         <li key={place.name}>
                             <a href={place.url} target="_blank" rel="noopener noreferrer">
                                 {place.name}
