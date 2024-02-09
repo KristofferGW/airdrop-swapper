@@ -13,8 +13,7 @@ function Privacy() {
                 <p>If you have any questions or concerns, feel free to reach out at tokentelescope at gmail dot com</p>
                 <p>Cheers,
                     <br/>
-                <p>Token Telescope</p>
-                </p>
+                Token Telescope</p>
             </StyledContainer>
         </div>
     )
