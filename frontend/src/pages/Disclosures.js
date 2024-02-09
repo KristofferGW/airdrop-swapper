@@ -5,7 +5,6 @@ import StyledContainer from "../styling-components/StyledContainer";
 function Disclosures() {
     return (
         <div>
-            <Header />
             <StyledContainer>
                 <StyledH2>Disclosures</StyledH2>
                 <p>Hey Anon,</p>

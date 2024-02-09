@@ -9,7 +9,6 @@ function Home() {
 
   return (
     <div>
-      <Header />
       <StyledContainer>
         <SwapForm setSelectedChain={setSelectedChain} />
         {selectedChain && <SwapReults selectedChain={selectedChain} />}
