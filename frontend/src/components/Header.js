@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Header() {
     return (
         <div>
-            <SiteTitle src="/logo.png" alt="airdrop swapper logo" style={{ width: '150px' }}/>
+            <Link to="/">
+                <SiteTitle src="/logo.png" alt="airdrop swapper logo" style={{ width: '150px' }}/>
+            </Link>
         </div>
     )
 }
