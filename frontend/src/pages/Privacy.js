@@ -1,11 +1,9 @@
-import Header from "../components/Header";
 import StyledH2 from "../styling-components/StyledH2";
 import StyledContainer from "../styling-components/StyledContainer";
 
 function Privacy() {
     return (
         <div>
-            <Header />
             <StyledContainer>
                 <StyledH2>Privacy Policy</StyledH2>
                 <p>Hey there,</p>
