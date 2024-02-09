@@ -1,4 +1,3 @@
-import Header from "../components/Header";
 import StyledH2 from "../styling-components/StyledH2";
 import StyledContainer from "../styling-components/StyledContainer";
 
