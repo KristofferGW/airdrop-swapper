@@ -7,7 +7,7 @@ import StyledContainer from "../styling-components/StyledContainer";
 function SwapForm({ selectedChain, setSelectedChain }) {
     const uniqueChains = Array.from(
         new Set(whereToSwap.flatMap((entry) => entry.chains))
-    );
+    ).sort();
 
     const handleChangeChain = (event) => {
         setSelectedChain(event.target.value);
