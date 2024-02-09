@@ -8,7 +8,7 @@ function Disclosures() {
                 <StyledH2>Disclosures</StyledH2>
                 <p>Hey Anon,</p>
                 <p>Just a heads up for everyone checking out my airdrop hunting recommendations. I'm no journalist, just a fellow investor like you, sharing insights. Keep in mind I can't predict airdrops, and it's crucial to form your own opinions.</p>
-                <p>Full disclosure: I might have a stake in some of these protocols. Also, some links could be referral ones. Do your due diligence, and happy investing!</p>
+                <p>Full disclosure: I might have a stake in some of these protocols. Also, some links could be referral ones. Do your due diligence, and happy airdrop hunting!</p>
                 <p>Cheers,
                     <br/>
                     0xKristoffer
