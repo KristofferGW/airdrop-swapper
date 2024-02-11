@@ -1,0 +1,14 @@
+body {
+  background-color: #310251;
+  color: #7999c5;
+}
+
+a {
+  color: #f7d3f7;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
