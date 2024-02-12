@@ -12,7 +12,7 @@ const SwapReults = ({ selectedChain }) => {
 
     return (
         <div>
-            <StyledH2>Places to Swap on {selectedChain}</StyledH2>
+            <StyledH2 size="1.3rem">Places to Swap on {selectedChain}</StyledH2>
                 <div>
                     {randomizedPlaces.map((placeToSwap) =>(
                         <SwapCard key={placeToSwap.name} placeToSwap={placeToSwap} />           
