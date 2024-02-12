@@ -1,26 +1,26 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { ethers } from 'ethers';
+// import { ethers } from 'ethers';
 
 function Header() {
-    const [connected, setConnected] = useState(false);
-    const [walletAddress, setWalletAddress] = useState('');
+    // const [connected, setConnected] = useState(false);
+    // const [walletAddress, setWalletAddress] = useState('');
 
-    async function connectWallet() {
-        if (!connected) {
-            const provider = new ethers.BrowserProvider(window.ethereum);
-            const signer = await provider.getSigner();
-            const _walletAddress = await signer.getAddress();
-            setConnected(true);
-            setWalletAddress(_walletAddress);
-        } else {
-            window.ethereum.setWalletAddress = null;
-            setConnected(false);
-            setWalletAddress('');
-        }
-    }
+    // async function connectWallet() {
+    //     if (!connected) {
+    //         const provider = new ethers.BrowserProvider(window.ethereum);
+    //         const signer = await provider.getSigner();
+    //         const _walletAddress = await signer.getAddress();
+    //         setConnected(true);
+    //         setWalletAddress(_walletAddress);
+    //     } else {
+    //         window.ethereum.setWalletAddress = null;
+    //         setConnected(false);
+    //         setWalletAddress('');
+    //     }
+    // }
 
     return (
         <header style={{ display: 'flex', alignItems: 'center' }}>
