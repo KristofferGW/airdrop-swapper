@@ -93,5 +93,11 @@
         [
             "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora"
         ],
-    "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"}
+    "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"},
+
+    {"name": "DLN", "chains":
+        [
+            "Ethereum", "BNB Chain", "Polygon", "Arbitrum One", "Avalanche", "Solana", "Linea", "Optimism", "Base", "Neon"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.dln.trade/r/6500"}
 ]
