@@ -7,6 +7,7 @@ import Disclosures from './pages/Disclosures';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import SwapPage from './pages/SwapPage';
+import BridgePage from './pages/BridgePage';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/swap' element={<SwapPage />} />
+        <Route path='/bridge' element={<BridgePage />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/disclosures' element={<Disclosures />} />
       </Routes>
