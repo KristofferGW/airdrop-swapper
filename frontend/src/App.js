@@ -6,6 +6,7 @@ import Privacy from "./pages/Privacy";
 import Disclosures from './pages/Disclosures';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import SwapPage from './pages/SwapPage';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/swap' element={<SwapPage />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/disclosures' element={<Disclosures />} />
       </Routes>

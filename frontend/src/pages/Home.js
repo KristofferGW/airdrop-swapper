@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-import SwapForm from '../components/SwapForm';
-import SwapReults from '../components/SwapResults';
+import React from 'react';
 import StyledContainer from '../styling-components/StyledContainer';
 
 function Home() {
-  const [selectedChain, setSelectedChain] = useState("");
 
   return (
     <div>
       <StyledContainer>
-        <SwapForm setSelectedChain={setSelectedChain} />
-        {selectedChain && <SwapReults selectedChain={selectedChain} />}
+        <p>This is just a home page</p>
       </StyledContainer>
     </div>
   );
