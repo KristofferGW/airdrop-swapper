@@ -23,9 +23,10 @@ function Header() {
     // }
 
     return (
-        <header style={{ display: 'flex', alignItems: 'center' }}>
+        // <header style={{ display: 'flex', alignItems: 'center' }}>
+        <header>
             <Link to="/">
-                <SiteTitle src="/logo.png" alt="airdrop swapper logo" style={{ width: '150px' }}/>
+                <SiteTitle src="/logo.png" alt="airdrop swapper logo" />
             </Link>
             {/* <div style={{ marginLeft: 'auto' }}>
                 <ConnectButton className='btn' onClick={connectWallet}>
@@ -44,6 +45,14 @@ const SiteTitle = styled.img`
     margin-top: 30px;
     margin-bottom: 50px;
     flex-grow: 1;
+    width: 150px;
+
+    @media (max-width: 768px) {
+        content: url('/mobilelogo.png');
+        width: 350px;
+        margin: 0 auto;
+        display: block;
+    }
 `;
 
 // const ConnectButton = styled.button`
