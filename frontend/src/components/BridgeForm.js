@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import StyledH2 from "../styling-components/StyledH2";
 import StyledContainer from "../styling-components/StyledContainer";
@@ -13,6 +13,30 @@ function BridgeForm({
     selectedToToken,
     setSelectedToToken
     }) {
+    
+    const [jumperChains, setJumperChains] = useState([])
+
+    useEffect(() => {
+        const fetchJumperChains = async () => {
+            const options = { method: 'GET', headers: { accept: 'application.json' } };
+
+            try {
+                const response = await fetch('https://li.quest/v1/chains?chainTypes=EVM%2CSVM', options);
+                const data = await response.json();
+                
+                const mappedChains = data.chains.map(chain => ({
+                    name: chain.name,
+                    id: chain.id,
+                }));
+
+                setJumperChains(mappedChains);
+            } catch (error) {
+                console.error('Error fetching jumper chains', error);
+            }
+        };
+
+        fetchJumperChains();
+    }, []);
 
     return (
         <div>
@@ -20,14 +44,18 @@ function BridgeForm({
                     <StyledH2 size="1.3rem">Where to bridge for a potential airdrop</StyledH2>
 
                     <StyledLabel htmlFor="fromChain">Bridge from:</StyledLabel>
-                    <SelectField
-                        id="fromChain"
-                        onChange={(e) => setSelectedFromChain(e.target.value)}
-                        value={selectedFromChain}    
-                    >
-                        <option value="">Select a Chain</option>
-                        <option value="ethereum">Ethereum</option>
-                    </SelectField>
+                        <SelectField
+                            id="fromChain"
+                            onChange={(e) => setSelectedFromChain(e.target.value)}
+                            value={selectedFromChain}>
+                            <option value="">Select a Chain</option>
+                            {jumperChains.map((chain) => (
+                                <option key={chain.id} value={chain.name}>
+                                    {chain.name}
+                                </option>
+                            ))}
+                            ))
+                        </SelectField>
 
                     {selectedFromChain && (
                         <>
