@@ -4,8 +4,6 @@ import StyledH2 from "../styling-components/StyledH2";
 import StyledContainer from "../styling-components/StyledContainer";
 
 function BridgeForm({
-    selectedFromChain,
-    setSelectedFromChain,
     selectedToChain,
     setSelectedToChain,
     selectedFromToken,
@@ -14,11 +12,14 @@ function BridgeForm({
     setSelectedToToken
     }) {
     
-    const [jumperChains, setJumperChains] = useState([])
+    const [jumperChains, setJumperChains] = useState([]);
+    const [selectedFromChain, setSelectedFromChain] = useState({});
+
+    const [jumperTokens, setJumperTokens] = useState([]);
 
     useEffect(() => {
         const fetchJumperChains = async () => {
-            const options = { method: 'GET', headers: { accept: 'application.json' } };
+            const options = { method: 'GET', headers: { accept: 'application/json' } };
 
             try {
                 const response = await fetch('https://li.quest/v1/chains?chainTypes=EVM%2CSVM', options);
@@ -38,6 +39,24 @@ function BridgeForm({
         fetchJumperChains();
     }, []);
 
+    //When from chain is choosen, call the API to fetch all tokens for that chain only and display in first token field.
+    const fetchJumperTokens = async (selectedFromChainId) => {
+        console.log('selectedFromChainId: ', selectedFromChainId)
+        const options = { method: 'GET', headers: { accept: 'application/json' } };
+
+        try {
+            const response = await fetch(`https://li.quest/v1/tokens?chains=${selectedFromChainId}&chainTypes=EVM%2CSVM`, options);
+            const data = await response.json();
+            console.log('data from fetchJumperTokens: ', data);
+            console.log('tokens on chosen chain: ', data.tokens[1]);
+            
+        } catch (error) {
+            console.error('Error fetching jumper tokens', error);
+        }
+    }
+
+    console.log(jumperTokens);
+
     return (
         <div>
             <StyledContainer>
@@ -46,8 +65,13 @@ function BridgeForm({
                     <StyledLabel htmlFor="fromChain">Bridge from:</StyledLabel>
                         <SelectField
                             id="fromChain"
-                            onChange={(e) => setSelectedFromChain(e.target.value)}
-                            value={selectedFromChain}>
+                            onChange={(e) => {
+                                const selectedChain = jumperChains.find(chain => chain.name === e.target.value);
+                                setSelectedFromChain(selectedChain || { id: "", name: "" });
+                                console.log(selectedChain);
+                                fetchJumperTokens(selectedChain.id);
+                            }}
+                            value={selectedFromChain.name}>
                             <option value="">Select a Chain</option>
                             {jumperChains.map((chain) => (
                                 <option key={chain.id} value={chain.name}>

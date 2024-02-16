@@ -3,7 +3,6 @@ import StyledContainer from '../styling-components/StyledContainer';
 import BridgeForm from '../components/BridgeForm';
 
 function BridgePage() {
-    const [selectedFromChain, setSelectedFromChain] = useState('');
     const [selectedToChain, setSelectedToChain] = useState('');
     const [selectedFromToken, setSelectedFromToken] = useState('');
     const [selectedToToken, setSelectedToToken] = useState('');
@@ -12,8 +11,6 @@ function BridgePage() {
         <div>
         <StyledContainer>
         <BridgeForm
-            selectedFromChain={selectedFromChain}
-            setSelectedFromChain={setSelectedFromChain}
             selectedToChain={selectedToChain}
             setSelectedToChain={setSelectedToChain}
             selectedFromToken={selectedFromToken}
