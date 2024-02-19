@@ -4,8 +4,6 @@ import StyledH2 from "../styling-components/StyledH2";
 import StyledContainer from "../styling-components/StyledContainer";
 
 function BridgeForm({
-    selectedToChain,
-    setSelectedToChain,
     selectedFromToken,
     setSelectedFromToken,
     selectedToToken,
@@ -14,8 +12,7 @@ function BridgeForm({
     
     const [jumperChains, setJumperChains] = useState([]);
     const [selectedFromChain, setSelectedFromChain] = useState({});
-
-    const [jumperTokens, setJumperTokens] = useState([]);
+    const [selectedToChain, setSelectedToChain] = useState({});
 
     useEffect(() => {
         const fetchJumperChains = async () => {
@@ -39,23 +36,16 @@ function BridgeForm({
         fetchJumperChains();
     }, []);
 
-    //When from chain is choosen, call the API to fetch all tokens for that chain only and display in first token field.
-    const fetchJumperTokens = async (selectedFromChainId) => {
-        console.log('selectedFromChainId: ', selectedFromChainId)
-        const options = { method: 'GET', headers: { accept: 'application/json' } };
-
-        try {
-            const response = await fetch(`https://li.quest/v1/tokens?chains=${selectedFromChainId}&chainTypes=EVM%2CSVM`, options);
-            const data = await response.json();
-            console.log('data from fetchJumperTokens: ', data);
-            console.log('tokens on chosen chain: ', data.tokens[1]);
-            
-        } catch (error) {
-            console.error('Error fetching jumper tokens', error);
-        }
+    const findMatchingBridges = (fromChain, toChain) => {
+        console.log('selected from chain' , fromChain);
+        console.log('selected to chain: ', toChain);
     }
 
-    console.log(jumperTokens);
+    useEffect(() => {
+        if (selectedFromChain.name && selectedToChain.name) {
+            findMatchingBridges(selectedFromChain, selectedToChain);
+        }
+    }, [selectedFromChain, selectedToChain]);
 
     return (
         <div>
@@ -69,7 +59,6 @@ function BridgeForm({
                                 const selectedChain = jumperChains.find(chain => chain.name === e.target.value);
                                 setSelectedFromChain(selectedChain || { id: "", name: "" });
                                 console.log(selectedChain);
-                                fetchJumperTokens(selectedChain.id);
                             }}
                             value={selectedFromChain.name}>
                             <option value="">Select a Chain</option>
@@ -81,46 +70,23 @@ function BridgeForm({
                             ))
                         </SelectField>
 
-                    {selectedFromChain && (
-                        <>
-                            <StyledLabel htmlFor="fromToken">Token:</StyledLabel>
-                            <SelectField
-                                id="fromToken"
-                                onChange={(e) => setSelectedFromToken(e.target.value)}
-                                value={selectedFromToken}>
-                                    <option value="">Select a Token</option>
-                                    <option value="ethereum">ETH</option>
-                            </SelectField>
-                        </>
-                    )}
-
-                    {selectedFromToken && (
-                        <>
-                            <StyledLabel htmlFor="toChain">Bridge to:</StyledLabel>
-                            <SelectField
+                    <StyledLabel htmlFor="toChain">Bridge to:</StyledLabel>
+                        <SelectField
                             id="toChain"
-                            onChange={(e) => setSelectedToChain(e.target.value)}
-                            value={selectedToChain}
-                            >
+                            onChange={(e) => {
+                                const selectedChain = jumperChains.find(chain => chain.name === e.target.value);
+                                setSelectedToChain(selectedChain || { id: "", name: "" });
+                                console.log(selectedChain);
+                            }}
+                            value={selectedToChain.name}>
                             <option value="">Select a Chain</option>
-                            <option value="arbitrum">Arbitrum</option>
-                            </SelectField>
-                        </>
-                    )}
-
-                    {selectedToChain && (
-                        <>
-                            <StyledLabel htmlFor="toToken">Select a Token:</StyledLabel>
-                            <SelectField
-                            id="toToken"
-                            onChange={(e) => setSelectedToToken(e.target.value)}
-                            value={selectedToToken}
-                            >
-                            <option value="">Select a Token</option>
-                            <option value="ethereum">ARB</option>
-                            </SelectField>
-                        </>
-                    )}
+                            {jumperChains.map((chain) => (
+                                <option key={chain.id} value={chain.name}>
+                                    {chain.name}
+                                </option>
+                            ))}
+                            ))
+                        </SelectField>
             </StyledContainer>
         </div>
     );
