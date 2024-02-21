@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Jumper Exchange",
+        "chains": [],
+        "airdropLikelihood": "High",
+        "rating": 4,
+        "url": "https://jumper.exchange"
+    },
+
+    {
+        "name": "Bungee Exchange",
+        "chains": [],
+        "airdropLikelihood": "Medium",
+        "rating": 3,
+        "url": "https://www.bungee.exchange"
+    }
+]

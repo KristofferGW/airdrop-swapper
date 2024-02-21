@@ -1,22 +1,16 @@
 import React, {useState} from 'react';
 import StyledContainer from '../styling-components/StyledContainer';
 import BridgeForm from '../components/BridgeForm';
+import SwapReults from '../components/SwapResults';
 
 function BridgePage() {
-    const [selectedToChain, setSelectedToChain] = useState('');
-    const [selectedFromToken, setSelectedFromToken] = useState('');
-    const [selectedToToken, setSelectedToToken] = useState('');
+    const [matchingBridges, setMatchingBridges] = useState([]);
 
     return (
         <div>
         <StyledContainer>
-        <BridgeForm
-            selectedToChain={selectedToChain}
-            setSelectedToChain={setSelectedToChain}
-            selectedFromToken={selectedFromToken}
-            setSelectedFromToken={setSelectedFromToken}
-            selectedToToken={selectedToToken}
-            setSelectedToToken={setSelectedToToken} />
+        <BridgeForm setMatchingBridges={setMatchingBridges} matchingBridges={matchingBridges} />
+        {matchingBridges && <SwapReults matchingBridges={matchingBridges} />}
         </StyledContainer>
     </div>
     );

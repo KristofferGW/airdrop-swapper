@@ -2,20 +2,18 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import StyledH2 from "../styling-components/StyledH2";
 import StyledContainer from "../styling-components/StyledContainer";
+import whereToBridge from '../data/whereToBridge.json';
 
-function BridgeForm({
-    selectedFromToken,
-    setSelectedFromToken,
-    selectedToToken,
-    setSelectedToToken
-    }) {
-    
-    const [jumperChains, setJumperChains] = useState([]);
+function BridgeForm({ setMatchingBridges, matchingBridges }) {
+
     const [selectedFromChain, setSelectedFromChain] = useState({});
     const [selectedToChain, setSelectedToChain] = useState({});
+    const [bridges, setBridges] = useState(whereToBridge);
+    const [uniqueChains, setUniqueChains] = useState([]);
 
     useEffect(() => {
-        const fetchJumperChains = async () => {
+
+        const fetchUniqueChains = async () => {
             const options = { method: 'GET', headers: { accept: 'application/json' } };
 
             try {
@@ -27,19 +25,47 @@ function BridgeForm({
                     id: chain.id,
                 }));
 
-                setJumperChains(mappedChains);
+                setUniqueChains(mappedChains);
+                updateChainsArray(mappedChains);
             } catch (error) {
                 console.error('Error fetching jumper chains', error);
             }
         };
 
-        fetchJumperChains();
+        fetchUniqueChains();
     }, []);
 
+    // FIX THIS
     const findMatchingBridges = (fromChain, toChain) => {
-        console.log('selected from chain' , fromChain);
-        console.log('selected to chain: ', toChain);
+        const tempMatchingBridges = [];
+
+        for (let i = 0; i < bridges.length; i++) {
+
+            const chainNames = bridges[i].chains.map(c => c.name);
+
+            if (
+                chainNames.includes(fromChain.name) && chainNames.includes(toChain.name)
+            ) {
+                tempMatchingBridges.push(bridges[i]);
+            }
+        }
+
+        setMatchingBridges(tempMatchingBridges);
     }
+
+    const updateChainsArray = (uppdatedChains) => {
+        const updatedState = bridges.map((bridge) => {
+            if (bridge.name === "Jumper Exchange") {
+                return {
+                    ...bridge,
+                    chains: uppdatedChains,
+                };
+            }
+            return bridge;
+        });
+        setBridges(updatedState);
+        setUniqueChains(uppdatedChains);
+    };
 
     useEffect(() => {
         if (selectedFromChain.name && selectedToChain.name) {
@@ -56,13 +82,13 @@ function BridgeForm({
                         <SelectField
                             id="fromChain"
                             onChange={(e) => {
-                                const selectedChain = jumperChains.find(chain => chain.name === e.target.value);
+                                const selectedChain = uniqueChains.find(chain => chain.name === e.target.value);
                                 setSelectedFromChain(selectedChain || { id: "", name: "" });
                                 console.log(selectedChain);
                             }}
                             value={selectedFromChain.name}>
                             <option value="">Select a Chain</option>
-                            {jumperChains.map((chain) => (
+                            {uniqueChains.map((chain) => (
                                 <option key={chain.id} value={chain.name}>
                                     {chain.name}
                                 </option>
@@ -74,13 +100,13 @@ function BridgeForm({
                         <SelectField
                             id="toChain"
                             onChange={(e) => {
-                                const selectedChain = jumperChains.find(chain => chain.name === e.target.value);
+                                const selectedChain = uniqueChains.find(chain => chain.name === e.target.value);
                                 setSelectedToChain(selectedChain || { id: "", name: "" });
                                 console.log(selectedChain);
                             }}
                             value={selectedToChain.name}>
                             <option value="">Select a Chain</option>
-                            {jumperChains.map((chain) => (
+                            {uniqueChains.map((chain) => (
                                 <option key={chain.id} value={chain.name}>
                                     {chain.name}
                                 </option>
