@@ -105,5 +105,11 @@
         [
             "Starknet"
         ],
-    "airdropLikelihood": "High", "rating": 3, "url": "https://app.nostra.finance/swap"}
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.nostra.finance/swap"},
+
+    {"name": "Bebop", "chains":
+        [
+            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://bebop.xyz/trade"}
 ]
