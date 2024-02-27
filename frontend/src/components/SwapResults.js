@@ -8,13 +8,21 @@ const SwapReults = ({ selectedChain }) => {
       entry.chains.includes(selectedChain)  
     );
 
-    const randomizedPlaces = filteredPlaces.sort(() => Math.random() - 0.5);
+    const airdropLikelihoodToNum = { "High": 3, "Medium": 2, "Low": 1}
+
+    const calculatedScore = (place) => {
+        const randomFactor = Math.floor(Math.random() * 8);
+
+        return place.rating + airdropLikelihoodToNum[place.airdropLikelihood] + randomFactor;
+    }
+
+    const sortedPlaces = filteredPlaces.sort((a, b) => calculatedScore(b) - calculatedScore(a));
 
     return (
         <div>
             <StyledH2 size="1.3rem">Places to Swap on {selectedChain}</StyledH2>
                 <div>
-                    {randomizedPlaces.map((placeToSwap) =>(
+                    {sortedPlaces.map((placeToSwap) =>(
                         <SwapCard key={placeToSwap.name} placeToSwap={placeToSwap} />           
                     ))}
                 </div>
