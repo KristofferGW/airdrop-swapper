@@ -31,7 +31,7 @@
 
     {"name": "Ambient", "chains":
         [
-            "Ethereum", "Scroll"
+            "Ethereum", "Scroll", "Blast"
         ],
     "airdropLikelihood": "Medium", "rating": 4, "url": "https://ambient.finance"},
 
@@ -109,7 +109,7 @@
 
     {"name": "Bebop", "chains":
         [
-            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain"
+            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast"
         ],
     "airdropLikelihood": "Medium", "rating": 3, "url": "https://bebop.xyz/trade"}
 ]
