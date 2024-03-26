@@ -4,14 +4,15 @@ import SwapCard from "./SwapCard";
 import whereToSwap from "../data/whereToSwap.json";
 
 const BridgeResults = ({ matchingBridges }) => {
-
+    console.log('matching bridges: ', matchingBridges);
     const randomizedBridges = matchingBridges.sort(() => Math.random() - 0.5);
+    console.log('randomized bridges: ', randomizedBridges);
 
     return (
         <div>
             <StyledH2 size="1.3rem">Places to Bridge from </StyledH2>
                 <div>
-                    {randomizedPlaces.map((placeToSwap) =>(
+                    {randomizedBridges.map((placeToSwap) =>(
                         <SwapCard key={placeToSwap.name} placeToSwap={placeToSwap} />           
                     ))}
                 </div>
@@ -19,4 +20,4 @@ const BridgeResults = ({ matchingBridges }) => {
     );
 };
 
-export default SwapReults;
+export default BridgeResults;

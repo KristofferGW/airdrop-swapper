@@ -70,6 +70,7 @@ function BridgeForm({ setMatchingBridges, matchingBridges }) {
     useEffect(() => {
         if (selectedFromChain.name && selectedToChain.name) {
             findMatchingBridges(selectedFromChain, selectedToChain);
+            console.log("matching bridges: ", matchingBridges);
         }
     }, [selectedFromChain, selectedToChain]);
 
