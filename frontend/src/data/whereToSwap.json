@@ -111,5 +111,11 @@
         [
             "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast"
         ],
-    "airdropLikelihood": "Medium", "rating": 3, "url": "https://bebop.xyz/trade"}
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://bebop.xyz/trade"},
+
+    {"name": "DeFi Saver", "chains":
+        [
+            "Ethereum", "Arbitrum One", "Optimism", "Base"
+        ],
+    "airdropLikelihood": "Low", "rating": 3, "url": "https://app.defisaver.com/exchange/swap"}
 ]
