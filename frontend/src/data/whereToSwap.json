@@ -7,7 +7,7 @@
 
     {"name": "Odos", "chains":
         [
-            "Ethereum", "Optimism", "BNB Chain", "Polygon", "Fantom", "zkSync Era", "Base", "Arbitrum One", "Avalanche"
+            "Ethereum", "Optimism", "BNB Chain", "Polygon", "Fantom", "zkSync Era", "Base", "Arbitrum One", "Avalanche", "Mantle", "Mode", "Linea"
         ],
     "airdropLikelihood": "Medium", "rating": 3, "url": "https://app.odos.xyz"},
 
