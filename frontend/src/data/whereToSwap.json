@@ -95,12 +95,6 @@
         ],
     "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"},
 
-    {"name": "DLN", "chains":
-        [
-            "Ethereum", "BNB Chain", "Polygon", "Arbitrum One", "Avalanche", "Solana", "Linea", "Optimism", "Base", "Neon"
-        ],
-    "airdropLikelihood": "High", "rating": 4, "url": "https://app.dln.trade/r/6500"},
-
     {"name": "Nostra Swap", "chains":
         [
             "Starknet"
