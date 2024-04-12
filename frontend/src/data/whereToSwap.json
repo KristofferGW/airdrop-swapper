@@ -111,5 +111,11 @@
         [
             "Ethereum", "Arbitrum One", "Optimism", "Base"
         ],
-    "airdropLikelihood": "Low", "rating": 3, "url": "https://app.defisaver.com/exchange/swap"}
+    "airdropLikelihood": "Low", "rating": 3, "url": "https://app.defisaver.com/exchange/swap"},
+
+    {"name": "WOOFi Swap", "chains":
+        [
+            "Avalanche", "BNB Chain", "Fantom", "Polygon", "Arbitrum One", "Optimism", "zkSync Era", "Polygon zkEVM", "Linea", "Base", "Mantle"
+        ],
+    "airdropLikelihood": "High", "rating": 5, "url": "https://fi.woo.org/swap"}
 ]
