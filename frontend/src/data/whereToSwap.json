@@ -103,7 +103,7 @@
 
     {"name": "Bebop", "chains":
         [
-            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast", "Optimism", "Base", "Scroll"
+            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast", "Optimism", "Base", "Scroll", "Taiko"
         ],
     "airdropLikelihood": "Medium", "rating": 3, "url": "https://bebop.xyz/trade"},
 
