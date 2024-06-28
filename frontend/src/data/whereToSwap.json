@@ -95,12 +95,6 @@
         ],
     "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"},
 
-    {"name": "Nostra Swap", "chains":
-        [
-            "Starknet"
-        ],
-    "airdropLikelihood": "High", "rating": 3, "url": "https://app.nostra.finance/swap"},
-
     {"name": "Bebop", "chains":
         [
             "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast", "Optimism", "Base", "Scroll", "Taiko"
