@@ -105,5 +105,16 @@
         [
             "Ethereum", "Arbitrum One", "Optimism", "Base"
         ],
-    "airdropLikelihood": "Low", "rating": 3, "url": "https://app.defisaver.com/exchange/swap"}
+    "airdropLikelihood": "Low", "rating": 3, "url": "https://app.defisaver.com/exchange/swap"},
+    {"name": "Aftermath Finance", "chains":
+        [
+            "Sui"
+        ],
+    "airdropLikelihood": "High", "rating": 2, "url": "https://aftermath.finance/trade"},
+    {"name": "SuiLend", "chains":
+        [
+            "Sui"
+        ],
+    "airdropLikelihood": "High", "rating": 2, "url": "https://suilend.fi/swap"}
+    
 ]
