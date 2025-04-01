@@ -5,12 +5,6 @@
         ],
     "airdropLikelihood": "High", "rating": 2, "url": "https://syncswap.xyz/swap"},
 
-    {"name": "Odos", "chains":
-        [
-            "Ethereum", "Optimism", "BNB Chain", "Polygon", "Fantom", "zkSync Era", "Base", "Arbitrum One", "Avalanche", "Mantle", "Mode", "Linea", "Scroll"
-        ],
-    "airdropLikelihood": "Medium", "rating": 3, "url": "https://app.odos.xyz"},
-
     {"name": "Slingshot", "chains":
         [
             "Arbitrum Nova", "Arbitrum One", "BNB Chain", "Base", "Canto", "Ethereum", "Optimism", "Osmosis", "Polygon"
@@ -91,13 +85,13 @@
 
     {"name": "Jumper", "chains":
         [
-            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora", "Blast"
+            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora", "Blast", "Sonic"
         ],
     "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"},
 
     {"name": "Bebop", "chains":
         [
-            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast", "Optimism", "Base", "Scroll", "Taiko"
+            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast", "Optimism", "Base", "Scroll", "Taiko", "Superseed"
         ],
     "airdropLikelihood": "Medium", "rating": 3, "url": "https://bebop.xyz/trade"},
 
@@ -106,15 +100,29 @@
             "Ethereum", "Arbitrum One", "Optimism", "Base"
         ],
     "airdropLikelihood": "Low", "rating": 3, "url": "https://app.defisaver.com/exchange/swap"},
+
     {"name": "Aftermath Finance", "chains":
         [
             "Sui"
         ],
     "airdropLikelihood": "High", "rating": 2, "url": "https://aftermath.finance/trade"},
+
     {"name": "SuiLend", "chains":
         [
             "Sui"
         ],
-    "airdropLikelihood": "High", "rating": 2, "url": "https://suilend.fi/swap"}
+    "airdropLikelihood": "High", "rating": 2, "url": "https://suilend.fi/swap"},
+
+    {"name": "HyperSwap", "chains":
+        [
+            "HyperEVM"  
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.hyperswap.exchange/"},
+    
+    {"name": "KittenSwap", "chains":
+        [
+            "HyperEVM"  
+        ],
+    "airdropLikelihood": "High", "rating": 4, "url": "https://app.kittenswap.finance/swap?referrer=0xB45976856Ee46A0FCA57bA68e2E8cc1Cd23662c7"}
     
 ]
