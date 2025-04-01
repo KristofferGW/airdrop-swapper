@@ -1,5 +1,5 @@
 # airdrop-swapper
-The site is live on http://tokentelescope.xyz/
+The site is live on https://token-telescope.onrender.com/
 
 I made this to automate the process of finding a place to swap tokens while positioning myself for a potential airdrop at the same time.
 
