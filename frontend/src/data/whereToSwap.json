@@ -106,11 +106,23 @@
             "Sui"
         ],
     "airdropLikelihood": "High", "rating": 2, "url": "https://aftermath.finance/trade"},
-    
+
     {"name": "SuiLend", "chains":
         [
             "Sui"
         ],
-    "airdropLikelihood": "High", "rating": 2, "url": "https://suilend.fi/swap"}
+    "airdropLikelihood": "High", "rating": 2, "url": "https://suilend.fi/swap"},
+
+    {"name": "HyperSwap", "chains":
+        [
+            "HyperEVM"  
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.hyperswap.exchange/"},
+    
+    {"name": "KittenSwap", "chains":
+        [
+            "HyperEVM"  
+        ],
+    "airdropLikelihood": "High", "rating": 4, "url": "https://app.kittenswap.finance/swap?referrer=0xB45976856Ee46A0FCA57bA68e2E8cc1Cd23662c7"}
     
 ]
