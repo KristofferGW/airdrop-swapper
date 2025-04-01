@@ -85,7 +85,7 @@
 
     {"name": "Jumper", "chains":
         [
-            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora", "Blast"
+            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora", "Blast", "Sonic"
         ],
     "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"},
 
