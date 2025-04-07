@@ -77,12 +77,6 @@
         ],
     "airdropLikelihood": "High", "rating": 3, "url": "https://jup.ag"},
 
-    {"name": "Bungee Exchange", "chains":
-        [
-            "Ethereum", "Optimism", "Arbitrum One", "Polygon", "Base", "zkSync Era", "Polygon zkEVM", "Linea", "BNB Chain", "Avalanche", "Gnosis", "Fantom", "Aurora"
-        ],
-    "airdropLikelihood": "Medium", "rating": 3, "url": "https://www.bungee.exchange"},
-
     {"name": "Jumper", "chains":
         [
             "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora", "Blast", "Sonic"
