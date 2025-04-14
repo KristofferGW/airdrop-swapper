@@ -43,7 +43,7 @@
 
     {"name": "Rabby", "chains":
         [
-            "Ethereum", "BNB Chain", "Arbitrum One", "Aurora", "Avalanche", "Base", "BTTC", "Celo", "Cronos", "Fantom", "Gnosis", "Klaytn", "Linea", "Optimism", "Polygon"
+            "Ethereum", "BNB Chain", "Arbitrum One", "Aurora", "Avalanche", "Base", "BTTC", "Celo", "Cronos", "Fantom", "Gnosis", "Klaytn", "Linea", "Optimism", "Polygon", "Berachain"
         ],
     "airdropLikelihood": "High", "rating": 3, "url": "https://rabby.io/rabby-points?code=OXKRIS"},
 
@@ -91,13 +91,13 @@
 
     {"name": "Jumper", "chains":
         [
-            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora", "Blast", "Sonic"
+            "Ethereum", "Arbitrum One", "Optimism", "Polygon", "BNB Chain", "zkSync Era", "Polygon zkEVM", "Base", "Avalanche", "Avalanche", "Linea", "Gnosis", "Fantom", "Moonriver", "Moonbeam", "FUSE", "OKX", "Boba", "Aurora", "Blast", "Sonic", "Berachain"
         ],
     "airdropLikelihood": "High", "rating": 4, "url": "https://jumper.exchange"},
 
     {"name": "Bebop", "chains":
         [
-            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast", "Optimism", "Base", "Scroll", "Taiko", "Superseed"
+            "Ethereum", "Polygon", "Arbitrum One", "BNB Chain", "Blast", "Optimism", "Base", "Scroll", "Taiko", "Superseed", "Berachain"
         ],
     "airdropLikelihood": "Medium", "rating": 3, "url": "https://bebop.xyz/trade"},
 
@@ -129,6 +129,12 @@
         [
             "Ethereum", "Arbitrum One", "Base", "Optimism", "Sonic", "Mantle", "BNB Chain", "Avalanche", "Gnosis", "Polygon", "Linea", "Ink", "Unichain", "zkSync Era", "Polygon zkEVM"
         ],
-    "airdropLikelihood":"Medium", "rating": 3, "url": "https://new.bungee.exchange/"}
+    "airdropLikelihood":"Medium", "rating": 3, "url": "https://new.bungee.exchange/"},
+
+    {"name": "BurrBear", "chains":
+        [
+            "Berachain"
+        ],
+    "airdropLikelihood": "Medium", "rating": 2, "url": "https://app.burrbear.io/#/berachain/swap"}
     
 ]
