@@ -1,4 +1,10 @@
 [
+    {"name": "Defi.app", "chains": 
+        [
+            "Base", "Ethereum", "Arbitrum One", "BNB Chain", "Sonic", "Solana", "TON", "Avalanche", "Mantle"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.defi.app/join/9faMTT"},
+
     {"name": "SyncSwap", "chains": 
         [
             "zkSync Era", "Linea", "Scroll"
