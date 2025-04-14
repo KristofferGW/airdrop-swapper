@@ -17,6 +17,12 @@
         ],
     "airdropLikelihood": "Medium", "rating": 3, "url": "https://metamask.io/swaps"},
 
+    {"name": "Momentum", "chains":
+        [
+            "Sui"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.mmt.finance/leaderboard?refer=S7DWAJ"},
+
     {"name": "Rainbow", "chains":
         [
             "Ethereum", "Arbitrum One", "Optimism", "Polygon", "Base", "Zora", "BNB Chain"
@@ -99,13 +105,7 @@
         [
             "Sui"
         ],
-    "airdropLikelihood": "High", "rating": 2, "url": "https://aftermath.finance/trade"},
-
-    {"name": "SuiLend", "chains":
-        [
-            "Sui"
-        ],
-    "airdropLikelihood": "High", "rating": 2, "url": "https://suilend.fi/swap"},
+    "airdropLikelihood": "High", "rating": 3, "url": "https://aftermath.finance/trade"},
 
     {"name": "HyperSwap", "chains":
         [
