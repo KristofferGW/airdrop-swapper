@@ -135,6 +135,12 @@
         [
             "Berachain"
         ],
-    "airdropLikelihood": "Medium", "rating": 2, "url": "https://app.burrbear.io/#/berachain/swap"}
+    "airdropLikelihood": "Medium", "rating": 2, "url": "https://app.burrbear.io/#/berachain/swap"},
+
+    {"name": "Phoenix", "chains":
+        [
+            "Solana"
+        ],
+    "airdropLikelihood": "Medium", "rating": 2, "url": "https://app.phoenix.trade/"}
     
 ]
