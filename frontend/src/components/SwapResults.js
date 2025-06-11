@@ -5,10 +5,10 @@ import whereToSwap from "../data/whereToSwap.json";
 
 const SwapReults = ({ selectedChain }) => {
     const filteredPlaces = whereToSwap.filter((entry) =>
-      entry.chains.includes(selectedChain)  
+        entry.chains.includes(selectedChain)
     );
 
-    const airdropLikelihoodToNum = { "High": 3, "Medium": 2, "Low": 1}
+    const airdropLikelihoodToNum = { "High": 3, "Medium": 2, "Low": 1 }
 
     const calculatedScore = (place) => {
         const randomFactor = Math.floor(Math.random() * 8);
@@ -21,13 +21,23 @@ const SwapReults = ({ selectedChain }) => {
     return (
         <div>
             <StyledH2 size="1.3rem">Places to Swap on {selectedChain}</StyledH2>
-                <div>
-                    {sortedPlaces.map((placeToSwap) =>(
-                        <SwapCard key={placeToSwap.name} placeToSwap={placeToSwap} />           
-                    ))}
-                </div>
+            <div>
+                {sortedPlaces.map((placeToSwap) => {
+                    if (
+                        placeToSwap.name === "OpenSea" &&
+                        new Date() >= new Date("2025-06-12T18:00:00")
+                    ) {
+                        return null;
+                    }
+
+                    return (
+                        <SwapCard key={placeToSwap.name} placeToSwap={placeToSwap} />
+                    );
+                })}
+            </div>
         </div>
     );
+
 };
 
 export default SwapReults;

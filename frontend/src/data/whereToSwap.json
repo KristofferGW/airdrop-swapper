@@ -141,6 +141,12 @@
         [
             "Solana"
         ],
-    "airdropLikelihood": "Medium", "rating": 2, "url": "https://app.phoenix.trade/"}
+    "airdropLikelihood": "Medium", "rating": 2, "url": "https://app.phoenix.trade/"},
+
+    {"name": "OpenSea", "chains":
+        [
+            "Solana"
+        ],
+    "airdropLikelihood": "High", "rating": 2, "url": "https://opensea.io/stats/tokens?chains=solana"}
     
 ]
