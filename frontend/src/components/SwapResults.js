@@ -1,4 +1,3 @@
-import React from "react";
 import StyledH2 from "../styling-components/StyledH2";
 import SwapCard from "./SwapCard";
 import whereToSwap from "../data/whereToSwap.json";
