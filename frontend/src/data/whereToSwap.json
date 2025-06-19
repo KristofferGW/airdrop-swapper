@@ -111,12 +111,6 @@
             "HyperEVM"  
         ],
     "airdropLikelihood": "High", "rating": 4, "url": "https://app.hyperswap.exchange/"},
-    
-    {"name": "KittenSwap", "chains":
-        [
-            "HyperEVM"  
-        ],
-    "airdropLikelihood": "High", "rating": 3, "url": "https://app.kittenswap.finance/swap?referrer=0xB45976856Ee46A0FCA57bA68e2E8cc1Cd23662c7"},
 
     {"name": "Bungee Beta", "chains":
         [
