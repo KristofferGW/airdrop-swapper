@@ -134,6 +134,12 @@
         [
             "Solana"
         ],
-    "airdropLikelihood": "High", "rating": 2, "url": "https://opensea.io/stats/tokens?chains=solana"}
+    "airdropLikelihood": "High", "rating": 2, "url": "https://opensea.io/stats/tokens?chains=solana"},
+
+    {"name": "HyperCore", "chains":
+        [
+            "HyperEVM"
+        ],
+    "airdropLikelihood": "High", "rating": 4, "url": "https://app.hyperliquid.xyz/trade"}
     
 ]
