@@ -140,6 +140,11 @@
         [
             "HyperEVM"
         ],
-    "airdropLikelihood": "High", "rating": 4, "url": "https://app.hyperliquid.xyz/trade"}
-    
+    "airdropLikelihood": "High", "rating": 4, "url": "https://app.hyperliquid.xyz/trade"},
+
+    {"name": "Perena (stablecoins only)", "chains":
+        [
+            "Solana"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.perena.org/swap"}
 ]
