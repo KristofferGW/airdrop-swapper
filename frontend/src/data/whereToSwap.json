@@ -146,5 +146,13 @@
         [
             "Solana"
         ],
-    "airdropLikelihood": "High", "rating": 3, "url": "https://app.perena.org/swap"}
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.perena.org/swap"},
+
+    {
+        "name": "Hyperbloom", "chains":
+        [
+            "HyperEVM"
+        ],
+        "airdropLikelihood": "High", "rating": 3, "url": "https://app.hyperbloom.xyz/"
+    }
 ]
