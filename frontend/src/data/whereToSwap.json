@@ -146,6 +146,19 @@
         [
             "HyperEVM"
         ],
-    "airdropLikelihood": "Medium", "rating": 3, "url": "https://www.hybra.finance/trade"}
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://www.hybra.finance/trade"},
     
+    {"name": "Perena (stablecoins only)", "chains":
+        [
+            "Solana"
+        ],
+    "airdropLikelihood": "High", "rating": 3, "url": "https://app.perena.org/swap"},
+
+    {
+        "name": "Hyperbloom", "chains":
+        [
+            "HyperEVM"
+        ],
+        "airdropLikelihood": "High", "rating": 3, "url": "https://app.hyperbloom.xyz/"
+    }
 ]
