@@ -140,6 +140,12 @@
         [
             "HyperEVM"
         ],
-    "airdropLikelihood": "High", "rating": 4, "url": "https://app.hyperliquid.xyz/trade"}
+    "airdropLikelihood": "High", "rating": 4, "url": "https://app.hyperliquid.xyz/trade"},
+
+    {"name": "Hybra Finance", "chains":
+        [
+            "HyperEVM"
+        ],
+    "airdropLikelihood": "Medium", "rating": 3, "url": "https://www.hybra.finance/trade"}
     
 ]
