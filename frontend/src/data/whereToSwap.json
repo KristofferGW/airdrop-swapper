@@ -160,5 +160,12 @@
             "HyperEVM"
         ],
         "airdropLikelihood": "High", "rating": 3, "url": "https://app.hyperbloom.xyz/"
+    },
+    {
+        "name": "Project X", "chains":
+        [
+            "HyperEVM"
+        ],
+        "airdropLikelihood": "Medium", "rating": 2, "url": "https://www.prjx.com/"
     }
 ]
