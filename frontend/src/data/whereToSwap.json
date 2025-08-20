@@ -167,5 +167,12 @@
             "HyperEVM"
         ],
         "airdropLikelihood": "Medium", "rating": 2, "url": "https://www.prjx.com/"
+    },
+    {
+        "name": "HyperFlow", "chains":
+        [
+            "HyperEVM"
+        ],
+        "airdropLikelihood": "High", "rating": 3, "url": "https://hyperflow.fun/"
     }
 ]
